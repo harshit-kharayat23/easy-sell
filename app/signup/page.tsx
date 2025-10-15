@@ -20,7 +20,7 @@ export default  function signUp(){
                 <button onClick={async()=>{
                    await  axios.post("/api/v1/signup",{username,password})
                    router.push("/signin")
-                }}>Sign Up</button>
+                }}>Sign up </button>
             </div>
 
              
