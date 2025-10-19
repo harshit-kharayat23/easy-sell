@@ -7,4 +7,4 @@ export  async function POST(req:NextRequest){
     return NextResponse.json({
         messge:"successfully sign up"
     })
-}
+} 
