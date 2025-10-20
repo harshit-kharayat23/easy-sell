@@ -10,7 +10,7 @@ export  async function POST(req:NextRequest){
    await client.user.create({
         data:{
             username:data.username,
-            password:data.password
+            password:data.password,
         }
     })
     
