@@ -20,3 +20,15 @@ export  async function POST(req:NextRequest){
         messge:"successfully sign up"
     })
 } 
+
+
+
+export async function GET(req=NextRequest){
+
+    const user=await client.user.findFirst();
+    return NextResponse.json({
+        user,
+    })
+
+
+}
